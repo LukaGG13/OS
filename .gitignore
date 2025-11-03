@@ -1,0 +1,6 @@
+*.bin
+*.bin.copy
+**/main
+**/temp
+**/out
+*.log
