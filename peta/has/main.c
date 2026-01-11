@@ -35,31 +35,31 @@ int programira(char* ime)
 }
 
 int provjera(char* ime, char* hrana) {
-    if(strcmp(ime, "Tin"))
+    if(strcmp(ime, "Tin") == 0)
     {
-        if(strcmp(hrana, "janjetina") || strcmp(hrana, "cevapi"))
-            return -1;
+        if(strcmp(hrana, "janjetina") == 0 || strcmp(hrana, "cevapi") == 0)
+            return 0;
         return 1; 
     }   
-    if(strcmp(ime, "Davor"))
+    if(strcmp(ime, "Davor") == 0)
     {
-        if(strcmp(hrana, "cokolada") || strcmp(hrana, "keksi"))
-            return -1;
+        if(strcmp(hrana, "cokolada") == 0 || strcmp(hrana, "keksi") == 0)
+            return 0;
         return 1; 
     }
-    if(strcmp(ime, "Ivan"))
+    if(strcmp(ime, "Ivan") == 0)
     {
-        if(strcmp(hrana, "strukle"))
-            return -1;
+        if(strcmp(hrana, "strukle") == 0)
+            return 0;
         return 1; 
     }
-    if(strcmp(ime, "Ivica"))
+    if(strcmp(ime, "Ivica") == 0)
     {
-        if(strcmp(hrana, "kelj") || strcmp(hrana, "grah"))
-            return -1;
+        if(strcmp(hrana, "kelj") == 0 || strcmp(hrana, "grah") == 0)
+            return 0;
         return 1; 
     }
-    return -1;
+    return 0;
 }
 
 void jede(char* ime, int* jede, int* hrana_odbijena, int* prazan_stol)
